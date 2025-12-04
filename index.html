@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PORTFOLIO | Web Developer(student)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 1em 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2em;
+      background: white;
+      margin-top: 1em;
+      border-radius: 8px;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 1em;
+    }
+
+    .skills ul, .resume ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li, .resume li {
+      background: #f0f0f0;
+      margin: 0.5em 0;
+      padding: 0.5em;
+      border-radius: 4px;
+    }
+
+    .project-card, .blog-post {
+      border: 1px solid #ddd;
+      padding: 1em;
+      margin: 1em 0;
+      border-radius: 5px;
+      background: #fafafa;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8em;
+      margin: 0.5em 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      background: #222;
+      color: white;
+      padding: 0.7em 1.5em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #555;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SHIVANK CHAUHAN</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero/Home -->
+  <section id="home" class="hero">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.BoY1nzlnsN6rn6ojyrObWwHaE3?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Profile Picture" />
+    <h2>Hi, I'm a student in Web Developement.</h2>
+    <h3>"Programming isn't about what you know, it's about what you can figure out." - Chris Pine<h3>
+    <p>I build responsive, accessible, and user-friendly websites using modern technologies.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>C</li>
+      <li>Git</li>
+      <li>GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Personal Portfolio</h3>
+      <p>A personal website to showcase my work, built with HTML, CSS.</p>
+      <a href="#">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>React Blog App</h3>
+      <p>A full-stack blog application built with React and Express.</p>
+      <a href="#">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Travel Agency</h3>
+      <p>A real-time experience about passion, knowledge, skills, and focusing on different aspects. Too much to go!!!</p>
+      <a href="TravelAgency.html">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Book Review</h3>
+        <p>Jot down your thoughts on characters, plot points, and key quotes. This will help you keep track of your reactions and develop an in-dept review later.</p>
+        <a href="book review.html">View Project</a>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+
+    <h3>Education</h3>
+    <p><strong>10th standard(CBSE)</strong> - St. Joseph School</p>
+    <p><strong>12th standard(CBSE)</strong> - St. Joseph School</p>
+    <p><strong>(On Going)B.Tech in Computer Science and Information Technology</strong> – KIET Group Of Institutions</p>
+    <p><a href="assets/resume.pdf" download>Download Resume (PDF)</a></p>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="blog">
+    <h2>Blog</h2>
+
+    <div class="blog-post">
+      <h3>Why I Love Web Development</h3>
+      <p><em>October 10, 2025</em></p>
+      <p>Web development allows me to bring ideas to life through code. I enjoy creating interactive and dynamic user experiences, and the constant evolution of technologies keeps it exciting.</p>
+    </div>
+
+    <div class="blog-post">
+      <h3>Joy Of Reading Books</h3>
+      <p><em>September 20, 2025</em></p>
+      <p>"Reading is my favourite hobby. Books take me to new worlds and help me relax after a long day". </p>
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PORTFOLIO | Built with ❤</p>
+  </footer>
+
+  <script>
+    // Simple demo for form submission
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! Your message has been received.');
+    });
+  </script>
+
+</body>
+</html>
